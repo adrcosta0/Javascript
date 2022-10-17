@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title></title>
+        </head>
+        <body>
+            <h2>Numero de Repetições:</h2>
+            <input type="number" id="quantidade">
+            <button id="botao1">Pressione</button>
+           
+            <p>Repetições:</p>
+        </body>
+    </html>
+
+    <script type="text/javascript">
+
+        var opção = prompt("Digite o algum nome, numero ou caracter desejada: ")
+
+        botao1.onclick = function() {
+            var qtde = Number(quantidade.value);
+
+            while (qtde > 0)
+            {// Bloco
+                var novoH2;
+                novoH2 = document.createElement("H2");
+                novoH2.textContent = opção;
+                document.body.appendChild(novoH2);
+                qtde = qtde - 1;
+            }
+        }
+    </script>

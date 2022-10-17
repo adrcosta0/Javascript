@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Login Teste</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+            <style>
+
+                body {
+                    margin: 0px;
+                    padding: 0px;
+                    overflow: hidden;
+                    font-family: 'Montserrat', sans-serif;
+                    font-family: 'Open Sans', sans-serif;
+                    background-image: url(fundo.jpg);
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .geral {
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .block1 {
+                    width: 200px;
+                    height: auto;
+                    margin-top: 50px;
+                    padding: 25px;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border: #000 solid 1px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center ;
+                    flex-direction: column;
+                }
+
+                .block2 {
+                    width: auto;
+                    height: auto;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border: #000 solid 1px;
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center ;
+                    flex-direction: column;
+                }
+
+                span {
+                    margin: 10px 0px 0px 0px;
+                }
+
+                button {
+                    margin-top: 20px;
+                    background-color: #333;
+                    color: #fff;
+                }
+
+                .result, .resultName, .resultPassworld {
+                    color: #fff;
+                }
+
+            </style>
+        </head>
+        <body>
+            
+            <div class="geral">
+                <div class="block1">
+                    <span>
+                        <input type="text" name="name" value="" id="userName" placeholder="Nome do usuario">
+                    </span>
+                    
+                    <span>
+                        <input type="password" name="passworld" value="" id="userPassworld" placeholder="Senha">
+                    </span>
+
+                    <button onclick="loginIn()">Login in</button>
+                </div>
+                <br>
+                <br>
+
+                <div class="block2">
+                    <span class="result">Resultado do login</span>
+                    
+                    <span class="resultName"></span>
+                    <span class="resultPassworld"></span>
+
+                </div>
+            </div>
+                <script type="text/javascript">
+
+                    function loginIn() {
+                        let user = document.getElementById('userName');
+                        let pass = document.getElementById('userPassworld');
+                        
+                        if( user.value == 'Adriel' && pass.value == 1234) {
+                            alert('Dados Corretos');
+                            document.querySelector('.result').innerHTML = "Login com sucesso";
+
+                            document.querySelector('.resultName').innerHTML = 'User Name: ' + user.value;
+                            document.querySelector('.resultPassworld').innerHTML = 'Passworld Name: ' + pass.value;
+                        } else {
+                            alert('Dados incorretos');
+                            document.querySelector('.result').innerHTML = "Login esta incorreto";
+                        }      
+                    }                  
+                </script>       
+        </body>
+    </html>

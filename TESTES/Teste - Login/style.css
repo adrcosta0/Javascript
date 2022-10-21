@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.geral {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block1 {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: #000 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+.block2 {
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: #000 solid 1px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+span {
+    margin: 10px 0px 0px 0px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.result, .resultName, .resultPassworld {
+    color: #fff;
+}

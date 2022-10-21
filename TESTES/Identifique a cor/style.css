@@ -1,0 +1,18 @@
+#squad {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 50px;
+}
+
+.azul {
+    background-color: #00f;
+    color: #fff;
+}
+
+.vermelho {
+    background-color: #f00;
+    color: #000;
+}

@@ -1,3 +1,6 @@
+
+// **** Calculo da Área da circunferência ***
+
 var D; //VALOR INDEFINIDO (UNDEFINED)
 D = prompt('Digite o diâmetro da circunferência:');
 //document.write(D * 2);

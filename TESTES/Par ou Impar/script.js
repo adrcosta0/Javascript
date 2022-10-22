@@ -1,3 +1,5 @@
+// *** Impar ou Par? ***
+
 let n= prompt("Digite um número desejado: ");
                 
 if ( n % 2 ==0) {

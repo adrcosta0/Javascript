@@ -1,3 +1,5 @@
+// *** Quilometragem por litro ***
+
 var KmAnterior = prompt('Qual a quilometragem anterior?') 
 var KmAtual = prompt('Qual a quilometragem atual?')
 var LitroGas = prompt('Quantos litros colocados?')
